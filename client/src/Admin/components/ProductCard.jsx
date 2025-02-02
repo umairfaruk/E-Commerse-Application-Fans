@@ -107,7 +107,7 @@ const ProductCard = ({ product }) => {
       <ImageContainer className="w-[10rem]">
         <ProductImage
           component="img"
-          image={`${import.meta.env.VITE_BACKEND_DOMAIN_NAME}/` + product?.thumbnail?.[0]?.filePath}
+          image={ product?.thumbnail?.[0]?.url}
           alt={product.name}
         />
         <DetailsContainer className="details">

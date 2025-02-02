@@ -11,8 +11,8 @@ const ProductCard = ({ product }) => {
   const navigate = useNavigate();
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  const imageUrl = `${import.meta.env.VITE_BACKEND_DOMAIN_NAME}/${
-    product.thumbnail?.[0]?.filePath
+  const imageUrl = `${
+    product.thumbnail?.[0]?.url
   }`;
 
   return (

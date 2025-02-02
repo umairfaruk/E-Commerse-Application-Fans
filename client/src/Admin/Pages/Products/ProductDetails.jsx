@@ -87,8 +87,8 @@ const ProductDetails = () => {
         setSelectedColor(product.sizes[0].colors[0]);
 
         const formattedImages = product.Main_images.map((img) => ({
-          original: `${import.meta.env.VITE_BACKEND_DOMAIN_NAME}/${img.filePath}`,
-          thumbnail: `${import.meta.env.VITE_BACKEND_DOMAIN_NAME}/${img.filePath}`,
+          original: `${img.url}`,
+          thumbnail: `${img.url}`,
           originalClass: "gallery-image",
           thumbnailClass: "thumb-image",
         }));

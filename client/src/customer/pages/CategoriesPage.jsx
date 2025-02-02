@@ -95,8 +95,8 @@ const CategoriesPage = () => {
                     <CardMedia
                       component="img"
                       height={isSmallScreen ? 200 : 300}
-                      image={`${import.meta.env.VITE_BACKEND_DOMAIN_NAME}/${
-                        category.categoryImage
+                      image={`${
+                        category.categoryImage.url
                       }`}
                       alt={category.categoryName}
                       sx={{
